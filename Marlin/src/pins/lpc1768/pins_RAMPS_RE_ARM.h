@@ -42,7 +42,7 @@
 //
 // Servos
 //
-#define SERVO0_PIN                         P1_20  // (11)
+#define SERVO0_PIN                         P2_04  // (11)
 #define SERVO1_PIN                         P1_21  // ( 6) also on J5-1
 #define SERVO2_PIN                         P1_19  // ( 5)
 #define SERVO3_PIN                         P1_18  // ( 4) 5V output
@@ -223,7 +223,7 @@
 
 #ifndef FAN_PIN
   #if EITHER(IS_RAMPS_EFB, IS_RAMPS_EFF)          // Hotend, Fan, Bed or Hotend, Fan, Fan
-    #define FAN_PIN                 RAMPS_D9_PIN
+    #define FAN_PIN                 P1_20
   #elif EITHER(IS_RAMPS_EEF, IS_RAMPS_SF)         // Hotend, Hotend, Fan or Spindle, Fan
     #define FAN_PIN                 RAMPS_D8_PIN
   #elif ENABLED(IS_RAMPS_EEB)                     // Hotend, Hotend, Bed
